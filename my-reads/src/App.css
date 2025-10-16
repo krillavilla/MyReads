@@ -111,6 +111,21 @@ body {
   margin-top: 20px;
 }
 
+.search-results-info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.search-results-info p {
+  margin: 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: inline-block;
+}
+
 .open-search {
   position: fixed;
   right: 20px;

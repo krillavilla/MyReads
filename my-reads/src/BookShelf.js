@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useDrop } from 'react-dnd';
 import Book from './Book';
 
@@ -33,6 +34,17 @@ const BookShelf = ({ title, books, onUpdateBookShelf }) => {
       </div>
     </div>
   );
+};
+
+BookShelf.propTypes = {
+  title: PropTypes.string.isRequired,
+  books: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    authors: PropTypes.arrayOf(PropTypes.string),
+    shelf: PropTypes.string
+  })).isRequired,
+  onUpdateBookShelf: PropTypes.func.isRequired
 };
 
 export default BookShelf;
