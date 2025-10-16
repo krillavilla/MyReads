@@ -1,0 +1,127 @@
+/* src/App.css */
+
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+}
+
+/* Header styles */
+.list-books-title {
+  background-color: #2e7c31;
+  color: white;
+  padding: 20px 0;
+}
+
+.list-books-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* BookShelf styles */
+.bookshelf {
+  margin: 20px;
+}
+
+.bookshelf-title {
+  font-size: 1.5em;
+  border-bottom: 2px solid #2e7c31;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.books-grid {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.books-grid li {
+  margin: 10px;
+}
+
+/* Book styles */
+.book {
+  width: 140px;
+  text-align: left;
+}
+
+.book-top {
+  position: relative;
+}
+
+.book-cover {
+  width: 128px;
+  height: 193px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+.book-title {
+  font-size: 1em;
+  margin: 0;
+}
+
+.book-authors {
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* SearchPage styles */
+.search-books {
+  padding: 20px;
+}
+
+.search-books-bar {
+  display: flex;
+  align-items: center;
+  background-color: #2e7c31;
+  padding: 10px;
+}
+
+.search-books-input-wrapper {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.search-books-input-wrapper input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.search-books-results {
+  margin-top: 20px;
+}
+
+.open-search {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.open-search a {
+  background-color: #2e7c31;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 2em;
+}
